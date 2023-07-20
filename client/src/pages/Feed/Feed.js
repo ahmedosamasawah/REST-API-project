@@ -31,7 +31,7 @@ class Feed extends Component {
         }
       `,
     };
-    fetch("https://node-js-blog-api.onrender.com/graphql", {
+    fetch("https://rest-api-project-vrqe.onrender.com/graphql", {
       method: "POST",
       headers: {
         Authorization: "Bearer " + this.props.token,
@@ -88,7 +88,7 @@ class Feed extends Component {
         page: page,
       },
     };
-    fetch("https://node-js-blog-api.onrender.com/graphql", {
+    fetch("https://rest-api-project-vrqe.onrender.com/graphql", {
       method: "POST",
       headers: {
         Authorization: "Bearer " + this.props.token,
@@ -131,7 +131,7 @@ class Feed extends Component {
         userStatus: this.state.status,
       },
     };
-    fetch("https://node-js-blog-api.onrender.com/graphql", {
+    fetch("https://rest-api-project-vrqe.onrender.com/graphql", {
       method: "POST",
       headers: {
         Authorization: "Bearer " + this.props.token,
@@ -179,7 +179,7 @@ class Feed extends Component {
     if (this.state.editPost) {
       formData.append("oldPath", this.state.editPost.imagePath);
     }
-    fetch("https://node-js-blog-api.onrender.com/post-image", {
+    fetch("https://rest-api-project-vrqe.onrender.com/post-image", {
       method: "PUT",
       headers: {
         Authorization: "Bearer " + this.props.token,
@@ -236,7 +236,7 @@ class Feed extends Component {
           };
         }
 
-        return fetch("https://node-js-blog-api.onrender.com/graphql", {
+        return fetch("https://rest-api-project-vrqe.onrender.com/graphql", {
           method: "POST",
           body: JSON.stringify(graphqlQuery),
           headers: {
@@ -317,7 +317,7 @@ class Feed extends Component {
         }
       `,
     };
-    fetch("https://node-js-blog-api.onrender.com/graphql", {
+    fetch("https://rest-api-project-vrqe.onrender.com/graphql", {
       method: "POST",
       headers: {
         Authorization: "Bearer " + this.props.token,
